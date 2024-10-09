@@ -1,0 +1,19 @@
+<!-- schedule.component.html -->
+
+<!-- Container for the schedule section -->
+<div class="schedule-container">
+    <!-- Header for the schedule section -->
+    <h2>Upcoming Study Sessions</h2>
+  
+    <!-- List of upcoming study sessions -->
+    <div *ngFor="let session of studySessions" class="study-session">
+      <h3>{{ session.title }}</h3>
+      <p><strong>Date:</strong> {{ session.start | date:'fullDate' }}</p>
+      <p><strong>Time:</strong> {{ session.start | date:'shortTime' }} - {{ session.end | date:'shortTime' }}</p>
+      <p><strong>Description:</strong> {{ session.description }}</p>
+    </div>
+  
+    <!-- Button to add a new study session -->
+    <button (click)="addNewSession()">Add New Session</button>
+  </div>
+  

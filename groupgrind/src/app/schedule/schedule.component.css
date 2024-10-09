@@ -1,0 +1,50 @@
+/* schedule.component.css */
+
+/* Container styling for the schedule section */
+.schedule-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .schedule-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Individual study session styling */
+  .study-session {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .study-session h3 {
+    margin: 0;
+    color: #007bff;
+  }
+  
+  .study-session p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Button styling for adding a new session */
+  .schedule-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .schedule-container button:hover {
+    background-color: #0056b3;
+  }
+  

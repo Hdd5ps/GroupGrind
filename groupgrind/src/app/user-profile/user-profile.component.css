@@ -1,0 +1,76 @@
+/* user-profile.component.css */
+
+/* Container styling for the user profile section */
+.user-profile-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .user-profile-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* User information styling */
+  .user-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Form styling for updating user details */
+  .update-user-form {
+    margin-top: 20px;
+  }
+  
+  .update-user-form h3 {
+    color: #333;
+  }
+  
+  .update-user-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  .update-user-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .update-user-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .update-user-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* User study groups styling */
+  .user-study-groups {
+    margin-top: 20px;
+  }
+  
+  .user-study-groups ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-study-groups li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+  }
+  

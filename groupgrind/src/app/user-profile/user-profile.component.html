@@ -1,0 +1,38 @@
+<!-- user-profile.component.html -->
+
+<!-- Container for the user profile section -->
+<div class="user-profile-container">
+    <!-- Header for the user profile section -->
+    <h2>User Profile</h2>
+  
+    <!-- Display user information -->
+    <div class="user-info">
+      <p><strong>Name:</strong> {{ user.name }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+  
+    <!-- Form for updating user details -->
+    <div class="update-user-form">
+      <h3>Update Your Details</h3>
+      <form (ngSubmit)="updateUser()">
+        <label for="userName">Name:</label>
+        <input type="text" id="userName" [(ngModel)]="user.name" name="userName" required>
+  
+        <label for="userEmail">Email:</label>
+        <input type="email" id="userEmail" [(ngModel)]="user.email" name="userEmail" required>
+  
+        <button type="submit">Update</button>
+      </form>
+    </div>
+  
+    <!-- Display user's study groups -->
+    <div class="user-study-groups">
+      <h3>Your Study Groups</h3>
+      <ul>
+        <li *ngFor="let group of userStudyGroups">
+          {{ group.name }} - {{ group.description }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  

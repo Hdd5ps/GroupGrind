@@ -1,0 +1,29 @@
+<!-- study-group.component.html -->
+
+<!-- Container for the study groups section -->
+<div class="study-groups-container">
+    <!-- Header for the study groups section -->
+    <h2>Study Groups</h2>
+  
+    <!-- List of study groups -->
+    <div *ngFor="let group of studyGroups" class="study-group">
+      <h3>{{ group.name }}</h3>
+      <p>{{ group.description }}</p>
+      <button (click)="joinGroup(group.id)">Join Group</button>
+    </div>
+  
+    <!-- Form for creating a new study group -->
+    <div class="create-group-form">
+      <h3>Create a New Study Group</h3>
+      <form (ngSubmit)="createGroup()">
+        <label for="groupName">Group Name:</label>
+        <input type="text" id="groupName" [(ngModel)]="newGroupName" name="groupName" required>
+  
+        <label for="groupDescription">Group Description:</label>
+        <textarea id="groupDescription" [(ngModel)]="newGroupDescription" name="groupDescription" required></textarea>
+  
+        <button type="submit">Create Group</button>
+      </form>
+    </div>
+  </div>
+  
